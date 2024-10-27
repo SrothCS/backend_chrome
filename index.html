@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Panel Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="side-panel">
+        <div id="loading-screen">
+            <img src="./images/minimal.gif" alt="Loading GIF" class="loading-gif">
+            <p class="reload-message">Reload page to try to fetch the content...</p>
+        </div>
+        <div id="content-display" style="display: none;">
+            <h1 class="content-title"></h1>
+            <div class="content-body"></div>
+            <button id="read-button" class="translate-button" style="background-color: khaki;">Read</button>
+            <div id="asl-display" style="display: none;">
+                <div id="asl-image-container"></div>
+            </div>
+            <button id="repeat-button" class="translate-button" style="background-color: khaki; display: none;">Repeat</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

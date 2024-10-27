@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "LASR",
+    "description": "Content to sign Language Project🤖.",
+    "version": "1.0",
+    "permissions": ["sidePanel", "tabs", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "side_panel": {
+        "default_path": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "./images/logo.png",
+        "32":"./images/logo.png",
+        "16":"./images/logo.png",
+        "128": "./images/logo.png"
+    }
+}
